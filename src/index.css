@@ -23,27 +23,32 @@ h1 {
 }
 
 .search input {
-  padding: 8px;
+  color: white;
+  padding: 0.6rem 4rem;
   font-size: 16px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
   outline: none;
-  border-radius: 8px;
+  border: none;
+  background-color: #333;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+
 }
 
 .search button {
-  padding: 8px 16px;
+  padding: 0.6rem 1rem;
   font-size: 16px;
   color: black;
   border: none;
   border-radius: 4px;
   cursor: pointer;
   background-color: yellow;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
 }
 
 .movie-container {
   display: flex;
-  justify-content: space-evenly;
+  justify-content:center;
   flex-wrap: wrap;
 }
 
@@ -58,6 +63,16 @@ h1 {
   background-color: #f9f9f9;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease;
+}
+
+@media screen and (max-width:490px) {
+  .card{
+    width: 150px;
+
+  }
+  .search input{
+    padding: 0.5rem 0.7rem;
+  }
 }
 
 .card:hover {
